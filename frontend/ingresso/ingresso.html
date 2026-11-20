@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingressos | After Hours</title>
+    <link rel="stylesheet" href="ingresso.css">
+</head>
+
+<body onload="inicializar()">
+
+    <header class="cabecalho">
+        <a href="../menu/menu.html" class="btn-voltar">
+            ← Voltar ao menu
+        </a>
+
+        <div class="cabecalho-texto">
+            <span class="identificador">AFTER HOURS / ADMINISTRAÇÃO</span>
+            <h1>Cadastro de ingressos</h1>
+            <p>Gerencie as modalidades e a disponibilidade dos seus eventos.</p>
+        </div>
+    </header>
+
+    <main class="container-master">
+
+        <section class="form-ingressos">
+
+            <div class="titulo-secao">
+                <span class="linha-destaque"></span>
+                <h2>Modalidades do evento</h2>
+                <p>Selecione um evento e configure seus tipos de ingresso.</p>
+            </div>
+
+            <label for="selectEvento">Evento</label>
+            <select id="selectEvento">
+                <option value="">Carregando eventos...</option>
+            </select>
+
+            <div id="listaModalidades"></div>
+
+            <button type="button" id="btAdicionar" onclick="adicionarModalidade()">
+                + Adicionar modalidade
+            </button>
+
+            <div id="divAviso">
+                Selecione um evento e cadastre suas modalidades.
+            </div>
+
+            <div class="acoes-formulario">
+                <button type="button" id="btSalvar" onclick="salvarIngressos()">
+                    Salvar ingressos
+                </button>
+            </div>
+
+        </section>
+
+        
+<section class="lista-ingresso">
+
+    <details class="painel-ingressos">
+        <summary>
+            <div class="titulo-listagem">
+                <span class="linha-destaque azul"></span>
+                <div>
+                    <h2>Ingressos cadastrados</h2>
+                    <p>Consulte os ingressos registrados no sistema.</p>
+                </div>
+            </div>
+
+            <span class="seta-painel">⌄</span>
+        </summary>
+
+        <div class="conteudo-tabela">
+            <div id="outputSaida">Carregando...</div>
+        </div>
+    </details>
+
+</section>
+
+
+    </main>
+
+    <footer>
+        <p>© 2026 After Hours. Todos os direitos reservados.</p>
+        <p>Juliana Coga — M32 2026</p>
+    </footer>
+
+    <script src="./ingresso.js"></script>
+
+</body>
+</html>

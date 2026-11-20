@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -9,7 +10,12 @@
 </head>
 
 <body onload="listar()">
+
     <header>
+        <a href="../menu/menu.html" class="btn-voltar">
+            ← Voltar ao menu
+        </a>
+
         <h1>Cadastro de Categorias</h1>
         <p>Gerencie as Categorias do sistema.</p>
     </header>
@@ -18,7 +24,7 @@
         <div class="conteudo-principal">
             <section class="form-esquerda">
                 <h2>Dados da categoria</h2>
-                
+
                 <label for="inputId_categoria">ID da categoria:</label>
                 <div class="linha-id">
                     <input type="number" name="inputId_categoria" id="inputId_categoria" placeholder="Ex: 1">
@@ -30,6 +36,7 @@
 
                 <label for="inputNome_categoria">Nome da Categoria</label>
                 <input type="text" name="inputNome_categoria" id="inputNome_categoria" placeholder="Ex: Praia">
+
                 <label for="inputDescricao_categoria">Descrição</label>
                 <input type="text" name="inputDescricao_categoria" id="inputDescricao_categoria" placeholder="Ex: Região litorânea">
 
@@ -49,10 +56,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Sistema CRUD Categorias. Todos os direitos reservados. <br> Juliana Coga - M32 2026  </p>
+        <p>&copy; 2026 After Hours. Todos os direitos reservados.<br>Juliana Coga - M32 2026</p>
     </footer>
 
     <script src="./categoria.js"></script>
-</body>
 
+</body>
 </html>
